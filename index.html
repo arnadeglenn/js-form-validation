@@ -10,18 +10,23 @@
 <body>
     <div class="form-box">
         <h1>Fill Out this Form!</h1>
-        <form action="post">
+        <form>
             <label for="email">Email</label>
-            <input type="text" id="email">
+            <input class = 'email' type="email" id="email">
+            <span class="error email-error" aria-live = 'polite'></span>
             <label for="country">Country</label>
-            <input type="text" id="country">
+            <input class = 'country' type="text" id="country">
+            <span class="error country-error" aria-live = 'polite'></span>
             <label for="zip-code">Zip Code</label>
-            <input type="text" id="zip-code">
+            <input class = 'zip-code' type="text" id="zip-code">
+            <span class="error zip-error" aria-live = 'polite'></span>
             <label for="password">Password</label>
-            <input type="text" id="password">
+            <input class='password' type="password" id="password">
+            <span class="error password-error" aria-live = 'polite'></span>
             <label for="password-confirm">Password Confirmation</label>
-            <input type="text" id="password-confirm">
-            <button type="submit">Submit</button>
+            <input class ='password-confirm' type="password" id="password-confirm">
+            <span class="error match-error" aria-live = 'polite'></span>
+            <button class = 'button' type="submit">Submit</button>
         </form>
     </div>
 </body>

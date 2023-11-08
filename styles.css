@@ -18,7 +18,7 @@ h1 {
 }
 
 .form-box {
-    height: 60vh;
+    height: 80vh;
     width: 55vw;
     border: 2px solid aquamarine;
     border-radius: 15px;
@@ -45,4 +45,38 @@ button {
     border: 1px solid green;
     border-radius: 8px;
     font-size: 1rem;
+}
+
+ button:hover {
+    cursor: pointer;
+ }
+
+input {
+    height: 1.7rem;
+    font-family: inherit;
+    padding: 5px;
+    border-bottom: 2px solid aquamarine;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 10rem;
+}
+
+input:invalid {
+    background-color: rgb(228, 116, 116);
+}
+
+span {
+    margin: 0px;
+    background-color: rgb(228, 116, 116);
+}
+
+span.active {
+    padding: 3px;
+}
+
+@media (max-width: 490px) {
+    .form-box {
+        width: 80vw;
+    }
 }
